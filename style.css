@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/static/images/pattern-background-desktop.svg);
+    background-size: cover;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.container {
+    margin: 100px auto;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+
+}
+
+.container img {
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+
+.container h2 {
+    font-weight: 900;
+    color: rgb(31, 49, 88);
+    margin-top: 0.5em;
+    text-align: center;
+    padding: 0em 2em;
+}
+
+
+.container p {
+    margin: 0px;
+    text-align: center;
+    color: rgb(130, 135, 150);
+    font-weight: 500;
+    padding: 0em 2em;
+}
+
+.container .annual {
+    width: 300px;
+    max-width: 350px;
+    background-color: rgb(248, 249, 254);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+
+}
+
+.container .annual .part-1 {
+    display: flex;
+    gap: 1em;
+}
+
+
+.container .annual .part-1 p {
+    padding: 0px 0px;
+    margin-top: 0.1em;
+}
+
+.container .annual .part-2 {
+    color: rgb(94, 85, 191);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.container .annual .part-2:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container .btn {
+    max-width: 350px;
+    width: 300px;
+    color: white;
+    background-color: rgb(56, 42, 225);
+    text-align: center;
+    padding: 0.8em;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0px 15px 10px rgb(226, 223, 252);
+}
+
+.container .btn:hover {
+    background-color: rgb(118, 108, 241);
+    cursor: pointer;
+}
+
+.container .footer {
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+
+.container .footer:hover {
+    cursor: pointer;
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-image: url(/static/images/pattern-background-mobile.svg);
+    }
+}
